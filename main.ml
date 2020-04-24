@@ -20,7 +20,6 @@ let () =
 *)
 
 open Soup
-open Str
 
 
 let read_whole_file filename =

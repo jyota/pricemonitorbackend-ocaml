@@ -1,3 +1,4 @@
 (executable
-  (libraries cohttp cohttp-lwt-unix lambdasoup)
+  (libraries cohttp cohttp-lwt-unix lambdasoup
+   (select str.cma from (str -> str.cma)))
   (name main))
