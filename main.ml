@@ -11,7 +11,7 @@ let test_pgocaml =
                 | Some(x) -> x
                 | None -> raise(Failure "Db query didn't work")
             in
-            `String email |> respond')
+            `Json Ezjsonm.(dict [("email", string email)]) |> respond')
 
 let default =
   not_found (fun _req ->
