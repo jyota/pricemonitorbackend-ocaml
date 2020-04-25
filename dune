@@ -1,4 +1,5 @@
 (executable
-  (libraries cohttp cohttp-lwt-unix lambdasoup
+  (preprocess (pps pgocaml_ppx))
+  (libraries opium pgocaml cohttp cohttp-lwt-unix lambdasoup
    (select str.cma from (str -> str.cma)))
   (name main))
